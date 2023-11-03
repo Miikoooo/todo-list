@@ -1,3 +1,4 @@
+
 ul {
     list-style-type: none;
     padding: 0%;
@@ -16,7 +17,7 @@ form {
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
-    background-color: #555;    
+    background-color: #FFEED9;    
     margin-left: 5px;
     margin-top: 10px;
     text-align: center;
@@ -24,7 +25,8 @@ form {
 .editing {
     border: none;
     border-radius: 5px;
-    background-color: #555;
+    background-color: #39A7FF;
+    color: #87C4FF;
     text-align: center;
     margin-top: 10px;
     width: 50%;
@@ -42,8 +44,8 @@ form {
     word-wrap: break-word;
     box-sizing: border-box; 
     padding: 12px;
-    background-color: #d9d9d9;
-    color: #555;
+    background-color: #FFEED9;
+    color: #87C4FF;
     margin-bottom: 20px;
     border-radius: 20px;
     border: none;
@@ -71,18 +73,25 @@ form {
     padding-top: 10px;
 }
 
+.addT {
+    border-radius: 5px;
+    background-color: #FFEED9;
+    border: 1px solid #87C4FF;
+    
+}
 
 .addBtn {
     width: 75px;
-    height: 30px;
+    height: 28.18px;
     padding: 0px;
-    background: #d9d9d9;
-    color: #555;
+    background: #FFEED9;
+    color: #87C4FF;
     float: right;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 0px;
-    border: none;
+    border-radius: 5px;
+    border: 1px solid #87C4FF;
+    margin-left: 5px;
 }
 
 .addBtn:hover {
@@ -90,6 +99,7 @@ form {
 }
 
 ::placeholder {
+    color: #87C4FF;
     text-align: center;
 }
 

@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>To-Do</title>
 </head>
-<body>
+<body style="background-color:#E0F4FF;">
     <div class="title">
-        <h1>to-do</h1>
+        <h1 style="color: #39A7FF;">to-do</h1>
     </div>
 
     <div class="liste">
-        <form class="addT" action="/addtask" method="POST">
-            <input type="text" name="newtask" placeholder="new task">        
+        <form action="/addtask" method="POST">
+            <input class="addT"  type="text" name="newtask" placeholder="new task">        
             <button class="addBtn">Add</button>
         </form>
     </div>
