@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>To-Do</title>
+</head>
+<body>
+    <div class="title">
+        <h1>to-do</h1>
+    </div>
+
+    <div class="liste">
+        <form class="addT" action="/addtask" method="POST">
+            <input type="text" name="newtask" placeholder="new task">        
+            <button class="addBtn">Add</button>
+        </form>
+    </div>
+
+    <div class="myUL">
+        <ul class="todo" style="padding: 0px;">
+            <% for (let i = 0; i < task.length; i++) { %>
+                <li class="liElement">
+                    <form action="/delete-task" method="POST">
+                        <input type="hidden" name="taskIndex" value="<%= i %>">
+                        <%= task[i] %> 
+                        <input class="check" type="checkbox" onchange="this.form.submit()">
+                    </form>
+                    <form action="/edit-task" method="POST">
+                        <input type="hidden" name="taskIndex" value="<%= i %>">
+                        <input class="editing" type="text" name="newText" value="edit">
+                    </form>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

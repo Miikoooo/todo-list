@@ -1,0 +1,95 @@
+ul {
+    list-style-type: none;
+    padding: 0%;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.edit {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #555;    
+    margin-left: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+.editing {
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    text-align: center;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.liElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 264px;
+    white-space: normal;
+    word-wrap: break-word;
+    box-sizing: border-box; 
+    padding: 12px;
+    background-color: #d9d9d9;
+    color: #555;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    line-height: 20px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.liste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.myUL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.addBtn {
+    width: 75px;
+    height: 30px;
+    padding: 0px;
+    background: #d9d9d9;
+    color: #555;
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    border: none;
+}
+
+.addBtn:hover {
+    color: grey;
+}
+
+::placeholder {
+    text-align: center;
+}
+
